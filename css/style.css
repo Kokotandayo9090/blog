@@ -48,103 +48,189 @@
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
 
-/* Spacing */
-/* Padding */
+
+
+/* General setup */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size:16px;
+}
+
 body {
-    padding: 0;
+    margin: 1.5rem auto;
+    width:90%;
+    min-width:56.25rem;
 }
 
-/* Margin */
-header, nav, main, footer {
-    margin: 0;
+/* Layout */
+main {
+    overflow:auto;
+    min-width:45rem;
 }
 
-/* Letter-spacing, word-spacing, line-height */
-p {
-    line-height: 1.5;
+section {
+    float: left;
+    min-width: 22.5rem;
+    width:50%;
 }
 
-/* Width, max-width, min-width */
-.container {
-    width: 100%;
-    max-width: 1200px;
+figure {
+    width:60%;
+    margin:0 10% 0 0;
+    float:left;
 }
 
-/* Height, max-height, min-height */
-.image {
-    height: 300px;
+figure img {
+    width:100%;
+    max-width:25rem;
 }
 
-/* Typography */
-/* Font-family, font-size, font-style, font-weight */
-body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-weight: normal;
+figcaption {
+    margin:.375rem 0;
 }
 
-h1, h2, h3 {
-    font-weight: bold;
+.long-list {
+    margin-top:0;
 }
 
-/* Text-decoration, text-align */
-a {
-    text-decoration: none;
-}
-
-/* Color */
-.highlight {
-    color: red;
-}
-
-/* Text-shadow, text-transform */
-h1 {
-    text-shadow: 2px 2px 4px #000000;
-}
-
-/* Box, Layout and Border */
-/* Border */
-.article-image {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-/* Box-shadow */
-.article-image {
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Display, float, align-items, align-content */
 nav {
-    display: flex;
-    align-items: center;
+    float: left;
+    width:11.25rem;
 }
 
-/* Grid-template-columns, grid-column-gap */
-.subsection {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 20px;
+footer {
+    clear: both;
+    margin-top:1.5rem;
 }
 
-/* Transform */
-.expand {
-    transform: scale(1.2);
+section, aside, nav, footer {
+  padding: .5rem;
 }
 
-/* Other */
-/* :nth()-child */
-nav ul li:nth-child(odd) {
-    background-color: #f0f0f0;
+
+header, footer {
+  border-top: .125rem solid #33658A;
+  border-bottom: .125rem solid #33658A;
 }
 
-/* :focus, :hover, :active */
-button:hover {
-    background-color: #007bff;
-    color: white;
+
+/* Imported Typfaces */
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight:normal;
+    font-style:normal;
+
 }
 
-/* @font-face or @import */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-body {
-    font-family: 'Roboto', sans-serif;
+@font-face {
+    font-family: 'Josefinslab';
+    src: url(/fonts/Josefinslab-Regular.ttf') format('tryetype');
+    font-weight:normal;
+    font-style:normal;
+}
+/* Typography styling */
+html {
+    font-family: 'Montserrat', Arial, sans-serif; 
+    font-size: 16px; 
+
+h1 {
+    font-family: 'Josefinslab', serif; 
+    font-size: 3.75rem; 
+    margin: 1.125rem 0; 
+    letter-spacing: 0.125rem; 
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Josefinslab', serif; 
+    font-size: 1.5rem; 
+    letter-spacing: 0.125rem; 
+}
+
+p, ul, ol {
+    font-size: 0.75rem; 
+    letter-spacing: 0.03125rem; 
+    word-spacing: 0.125rem; 
+}
+
+h2 + p {
+    text-indent: 1.5rem; 
+}
+
+figcaption {
+    font-size: 0.75rem; 
+    margin-bottom: 2rem; 
+}
+
+/* Link styling */
+a {
+    color: #33658A; 
+    text-decoration: none; 
+    outline: none; 
+}
+
+a:visited {
+    color: #33658A; 
+}
+
+a:focus,
+a:hover {
+    text-decoration: none; 
+}
+
+.long-list:hover a {
+    text-transform: uppercase; 
+}
+
+/* Lists styling */
+ul, ol {
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+    margin-left: 0; 
+    margin-right: 0; 
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: lower-alpha;
+}
+
+/* Navigation menu styling */
+nav {
+    padding-left: 0; 
+    margin-top: 0.25rem;
+}
+
+nav a {
+    text-decoration: none; 
+    display: inline-block; 
+    width: 100%; 
+    line-height: 3; 
+    text-align: center; 
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem; 
+    border-bottom: 0.0625rem solid #33658A; 
+}
+
+nav a:focus,
+nav a:hover {
+    color: #FFF;
+    background-color: #33658A;
+}
+
+nav a:active {
+    color: #FFF; 
+    background-color: #000; 
+}
+
+/* Footer styling */
+footer {
+    text-align: center; 
+}
