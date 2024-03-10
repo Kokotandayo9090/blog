@@ -50,187 +50,105 @@
 
 
 
-/* General setup */
-* {
-    box-sizing: border-box;
+.element {
+    padding: 20px; /* Example of padding */
 }
 
-html {
-    font-size:16px;
+/* Margin */
+.element {
+    margin-top: 10px; /* Example of margin */
+    margin-bottom: 10px;
 }
 
-body {
-    margin: 1.5rem auto;
-    width:90%;
-    min-width:56.25rem;
+/* Letter-spacing, word-spacing, line-height */
+.element {
+    letter-spacing: 1px; /* Example of letter spacing */
+    word-spacing: 2px; /* Example of word spacing */
+    line-height: 1.5; /* Example of line height */
 }
 
-/* Layout */
-main {
-    overflow:auto;
-    min-width:45rem;
+/* Width, max-width, min-width */
+.element {
+    width: 100%; /* Example of width */
+    max-width: 500px; /* Example of max-width */
+    min-width: 200px; /* Example of min-width */
 }
 
-section {
-    float: left;
-    min-width: 22.5rem;
-    width:50%;
+/* Height, max-height, min-height */
+.element {
+    height: 200px; /* Example of height */
+    max-height: 300px; /* Example of max-height */
+    min-height: 100px; /* Example of min-height */
 }
 
-figure {
-    width:60%;
-    margin:0 10% 0 0;
-    float:left;
+/* Typography */
+/* Font-family, font-size, font-style, font-weight */
+.element {
+    font-family: Arial, sans-serif; /* Example of font family */
+    font-size: 16px; /* Example of font size */
+    font-style: italic; /* Example of font style */
+    font-weight: bold; /* Example of font weight */
 }
 
-figure img {
-    width:100%;
-    max-width:25rem;
+/* Text-decoration, text-align */
+.element {
+    text-decoration: underline; /* Example of text decoration */
+    text-align: center; /* Example of text alignment */
 }
 
-figcaption {
-    margin:.375rem 0;
+/* Color */
+.element {
+    color: #333; /* Example of color */
 }
 
-.long-list {
-    margin-top:0;
+/* Text-shadow, text-transform */
+.element {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Example of text shadow */
+    text-transform: uppercase; /* Example of text transformation */
 }
 
-nav {
-    float: left;
-    width:11.25rem;
+/* Box, Layout and Border */
+/* Border */
+.element {
+    border: 1px solid #ccc; /* Example of border */
+    border-radius: 5px; /* Example of border radius */
 }
 
-footer {
-    clear: both;
-    margin-top:1.5rem;
+/* Box-shadow */
+.element {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Example of box shadow */
 }
 
-section, aside, nav, footer {
-  padding: .5rem;
+/* Display, float, align-items, align-content */
+.element {
+    display: flex; /* Example of display */
+    float: left; /* Example of float */
+    align-items: center; /* Example of align items */
+    align-content: space-between; /* Example of align content */
 }
 
-
-header, footer {
-  border-top: .125rem solid #33658A;
-  border-bottom: .125rem solid #33658A;
+/* Grid-template-columns, grid-column-gap */
+.element {
+    display: grid; /* Example of grid display */
+    grid-template-columns: repeat(3, 1fr); /* Example of grid template columns */
+    grid-column-gap: 20px; /* Example of grid column gap */
 }
 
-
-/* Imported Typfaces */
-@font-face {
-    font-family: 'Montserrat';
-    src: url(/fonts/Montserrat-Regular.ttf') format('truetype');
-    font-weight:normal;
-    font-style:normal;
-
+/* Transform */
+.element {
+    transform: rotate(45deg); /* Example of transformation */
 }
 
-@font-face {
-    font-family: 'Josefinslab';
-    src: url(/fonts/Josefinslab-Regular.ttf') format('tryetype');
-    font-weight:normal;
-    font-style:normal;
-}
-/* Typography styling */
-html {
-    font-family: 'Montserrat', Arial, sans-serif; 
-    font-size: 16px; 
-
-h1 {
-    font-family: 'Josefinslab', serif; 
-    font-size: 3.75rem; 
-    margin: 1.125rem 0; 
-    letter-spacing: 0.125rem; 
-    text-align: center;
+/* Other */
+/* :nth()-child */
+.parent:nth-child(odd) {
+    background-color: #f0f0f0; /* Example of nth-child */
 }
 
-h2 {
-    font-family: 'Josefinslab', serif; 
-    font-size: 1.5rem; 
-    letter-spacing: 0.125rem; 
-}
-
-p, ul, ol {
-    font-size: 0.75rem; 
-    letter-spacing: 0.03125rem; 
-    word-spacing: 0.125rem; 
-}
-
-h2 + p {
-    text-indent: 1.5rem; 
-}
-
-figcaption {
-    font-size: 0.75rem; 
-    margin-bottom: 2rem; 
-}
-
-/* Link styling */
-a {
-    color: #33658A; 
-    text-decoration: none; 
-    outline: none; 
-}
-
-a:visited {
-    color: #33658A; 
-}
-
-a:focus,
+/* :focus, :hover, :active */
 a:hover {
-    text-decoration: none; 
+    color: red; /* Example of hover effect */
 }
 
-.long-list:hover a {
-    text-transform: uppercase; 
-}
-
-/* Lists styling */
-ul, ol {
-    margin-top: 1rem; 
-    margin-bottom: 1rem; 
-    margin-left: 0; 
-    margin-right: 0; 
-}
-
-ul {
-    list-style-type: square;
-}
-
-ol {
-    list-style-type: lower-alpha;
-}
-
-/* Navigation menu styling */
-nav {
-    padding-left: 0; 
-    margin-top: 0.25rem;
-}
-
-nav a {
-    text-decoration: none; 
-    display: inline-block; 
-    width: 100%; 
-    line-height: 3; 
-    text-align: center; 
-    font-size: 1.125rem;
-    margin-bottom: 1.5rem; 
-    border-bottom: 0.0625rem solid #33658A; 
-}
-
-nav a:focus,
-nav a:hover {
-    color: #FFF;
-    background-color: #33658A;
-}
-
-nav a:active {
-    color: #FFF; 
-    background-color: #000; 
-}
-
-/* Footer styling */
-footer {
-    text-align: center; 
-}
+/* @font-face or @import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Example of importing fonts */
