@@ -48,101 +48,103 @@
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Use a meta tag to designate yourself as the author of the page -->
-    <meta name="author" content="Mizuki">
-    <!-- Give your page a title. -->
-    <title>Your Title</title>
-    <!-- Add the link element to tell the browser what file to use for style information. -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-<header>
-    <!-- Add a level 1 heading to display three words. Use a span element to highlight the second word. Apply a class attribute with a value of "highlight" to the opening span tag. -->
-    <h1>First <span class="highlight">Second</span> Third</h1>
-</header>   
+/* Spacing */
+/* Padding */
+body {
+    padding: 0;
+}
 
-<!-- Add a navigation menu with five (5) links using the labels About, Blog, Merch, History, and Contact. Use the "#" symbol for your href values. -->
-<nav>
-    <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Merch</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
+/* Margin */
+header, nav, main, footer {
+    margin: 0;
+}
 
-<main>
-    <!-- Add a level 2 heading -->
-    <h2>Main Section</h2>
-    <!-- Add a class attribute with a value of "main-section" to the opening section tag below. -->
-    <section class="main-section">
-        <article>
-            <!-- Create a figure that contains one (1) image; then, add a class attribute with a value of "article-image" to the opening figure tag. -->
-            <figure class="article-image">
-                <img src="image.jpg" alt="Description of the image">
-            </figure>
-            <!-- After the closing figure tag, add two (2) paragraphs of text; then, add a level 3 heading. -->
-            <p>First paragraph</p>
-            <p>Second paragraph</p>
-            <h3>Subheading</h3>
-            <!-- After the closing heading tag, add two (2) additional paragraphs of text and another level 3 heading. -->
-            <p>Third paragraph</p>
-            <p>Fourth paragraph</p>
-            <h3>Another Subheading</h3>
-            <!-- After the closing heading tag, add three (3) paragraphs of text. -->
-            <p>Fifth paragraph</p>
-            <p>Sixth paragraph</p>
-            <p>Seventh paragraph</p>
-            <!-- Use the time element with a datetime attribute to display a date after the last paragraph is closed. -->
-            <time datetime="2024-03-10">March 10, 2024</time>
-            <!-- Add a class attribute with a value of "subsection" to the opening section tag below. -->
-            <section class="subsection">
-                <!-- Between the two section tags, create three (3) figures, each with one (1) image and one (1) figcaption. -->
-                <figure>
-                    <img src="image1.jpg" alt="Description of the first image">
-                    <figcaption>Caption for the first image</figcaption>
-                </figure>
-                <figure>
-                    <img src="image2.jpg" alt="Description of the second image">
-                    <figcaption>Caption for the second image</figcaption>
-                </figure>
-                <figure>
-                    <img src="image3.jpg" alt="Description of the third image">
-                    <figcaption>Caption for the third image</figcaption>
-                </figure>
-            </section>
-            <!-- Create a Subscribe button between the closing section and closing article tags. -->
-            <button>Subscribe</button>
-        </article>
-        <aside>
-            <!-- Add a level 3 heading, followed by an image and a paragraph. -->
-            <h3>Heading</h3>
-            <img src="aside-image1.jpg" alt="Description of the image">
-            <p>Paragraph related to the first image.</p>
-            <!-- Add another level 3 heading, followed by an image and a paragraph. -->
-            <h3>Heading</h3>
-            <img src="aside-image2.jpg" alt="Description of the image">
-            <p>Paragraph related to the second image.</p>
-            <!-- You guessed it, add an additional level three heading, followed by an image and a paragraph -->
-            <h3>Heading</h3>
-            <img src="aside-image3.jpg" alt="Description of the image">
-            <p>Paragraph related to the third image.</p>
-            <!-- Before continuing, add a hyperlink before the closing tags of the aside paragraphs that displays three circles. Use the "#" symbol as the href value, and include a class attribute with the value of "expand". -->
-            <a href="#" class="expand">&#x26AB;&#x26AB;&#x26AB;</a>
-        </aside>
-    </section>
-</main>
-<footer>
-    <!-- Add a paragraph with the copyright and a link to an email address. -->
-    <p>&copy; 2024 Mizuki. All rights reserved. For inquiries, email <a href="mailto:contact@example.com">contact@example.com</a>.</p>
-    <!-- Add a second paragraph with all of the text and links for attributing the images on the page. Make sure to use the "ideal" attribution from Creative Commons. -->
-    <p>All images used under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>. See <a href="attribution.html">attribution page</a> for details.</p>
-</footer>
-</body>
-</html>
+/* Letter-spacing, word-spacing, line-height */
+p {
+    line-height: 1.5;
+}
+
+/* Width, max-width, min-width */
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Height, max-height, min-height */
+.image {
+    height: 300px;
+}
+
+/* Typography */
+/* Font-family, font-size, font-style, font-weight */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Text-decoration, text-align */
+a {
+    text-decoration: none;
+}
+
+/* Color */
+.highlight {
+    color: red;
+}
+
+/* Text-shadow, text-transform */
+h1 {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Box, Layout and Border */
+/* Border */
+.article-image {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Box-shadow */
+.article-image {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Display, float, align-items, align-content */
+nav {
+    display: flex;
+    align-items: center;
+}
+
+/* Grid-template-columns, grid-column-gap */
+.subsection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+}
+
+/* Transform */
+.expand {
+    transform: scale(1.2);
+}
+
+/* Other */
+/* :nth()-child */
+nav ul li:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+/* :focus, :hover, :active */
+button:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* @font-face or @import */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
