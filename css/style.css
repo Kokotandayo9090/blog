@@ -50,102 +50,134 @@
 
 
 
-.element {
-    padding: 20px; /* Example of padding */
+body, h1, h2, h3, p, figure, figcaption {
+    margin: 0;
+    padding: 0;
 }
 
-/* Margin */
-.element {
-    margin-top: 10px; /* Example of margin */
-    margin-bottom: 10px;
+/* Apply a general box-sizing rule to calculate widths and heights including padding and border */
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
-/* Letter-spacing, word-spacing, line-height */
-.element {
-    letter-spacing: 1px; /* Example of letter spacing */
-    word-spacing: 2px; /* Example of word spacing */
-    line-height: 1.5; /* Example of line height */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
 }
 
-/* Width, max-width, min-width */
-.element {
-    width: 100%; /* Example of width */
-    max-width: 500px; /* Example of max-width */
-    min-width: 200px; /* Example of min-width */
+header {
+    background: #2c2c2c; /* Dark grey background */
+    padding: 1em 0;
+    text-align: center;
 }
 
-/* Height, max-height, min-height */
-.element {
-    height: 200px; /* Example of height */
-    max-height: 300px; /* Example of max-height */
-    min-height: 100px; /* Example of min-height */
+header h1 {
+    color: #fff;
+    font-size: 2.5rem;
 }
 
-/* Typography */
-/* Font-family, font-size, font-style, font-weight */
-.element {
-    font-family: Arial, sans-serif; /* Example of font family */
-    font-size: 16px; /* Example of font size */
-    font-style: italic; /* Example of font style */
-    font-weight: bold; /* Example of font weight */
+/* Highlight the second word in the h1 header */
+.highlight {
+    color: #dd1c1a; /* Red color for the highlighted word */
 }
 
-/* Text-decoration, text-align */
-.element {
-    text-decoration: underline; /* Example of text decoration */
-    text-align: center; /* Example of text alignment */
+nav ul {
+    list-style-type: none;
+    background-color: #474747; /* Medium grey background */
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* Color */
-.element {
-    color: #333; /* Example of color */
+nav ul li {
+    display: inline;
 }
 
-/* Text-shadow, text-transform */
-.element {
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Example of text shadow */
-    text-transform: uppercase; /* Example of text transformation */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 1em;
 }
 
-/* Box, Layout and Border */
-/* Border */
-.element {
-    border: 1px solid #ccc; /* Example of border */
-    border-radius: 5px; /* Example of border radius */
+main {
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 0 2em;
 }
 
-/* Box-shadow */
-.element {
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Example of box shadow */
+.main-section {
+    background: #f5f5f5; /* Light grey background */
+    padding: 1em;
+    margin-bottom: 2em;
 }
 
-/* Display, float, align-items, align-content */
-.element {
-    display: flex; /* Example of display */
-    float: left; /* Example of float */
-    align-items: center; /* Example of align items */
-    align-content: space-between; /* Example of align content */
+.article-image img {
+    width: 100%;
+    height: auto;
 }
 
-/* Grid-template-columns, grid-column-gap */
-.element {
-    display: grid; /* Example of grid display */
-    grid-template-columns: repeat(3, 1fr); /* Example of grid template columns */
-    grid-column-gap: 20px; /* Example of grid column gap */
+figcaption {
+    text-align: center;
+    margin-top: 0.5em;
 }
 
-/* Transform */
-.element {
-    transform: rotate(45deg); /* Example of transformation */
+button {
+    background-color: #dd1c1a; /* Red background */
+    color: white;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
+    display: block;
+    margin: 2em auto;
 }
 
-/* Other */
-/* :nth()-child */
-.parent:nth-child(odd) {
-    background-color: #f0f0f0; /* Example of nth-child */
+footer {
+    background-color: #2c2c2c; /* Dark grey background */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
 }
 
-/* :focus, :hover, :active */
-a:hover {
-    color: red; /* Example of hover effect */
+footer a {
+    color: #dd1c1a; /* Red color for links */
+}
+
+.expand {
+    display: inline-block;
+    margin-left: 0.5em;
+}
+
+/* Styling for the subsection figures */
+.subsection figure {
+    margin: 1em;
+    display: inline-block;
+    width: calc(33.333% - 2em); /* Three figures side by side with margin */
+}
+
+.subsection img {
+    width: 100%;
+    height: auto;
+}
+
+.subsection figcaption {
+    margin-top: 0.5em;
+}
+
+/* Responsive Image Grid for subsection */
+@media (max-width: 768px) {
+    .subsection figure {
+        width: calc(50% - 2em); /* Two figures side by side on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .subsection figure {
+        width: 100%; /* Stack on very small screens */
+    }
+
+    nav ul li {
+        display: block;
+    }
 }
