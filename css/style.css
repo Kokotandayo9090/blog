@@ -149,6 +149,3 @@
 a:hover {
     color: red; /* Example of hover effect */
 }
-
-/* @font-face or @import */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Example of importing fonts */
