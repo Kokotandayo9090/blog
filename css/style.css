@@ -67,7 +67,7 @@ body {
 }
 
 header {
-    background: #2c2c2c; /* Dark grey background */
+    background: rgba(255, 255, 255, 0.3);
     padding: 1em 0;
     text-align: center;
 }
@@ -79,12 +79,12 @@ header h1 {
 
 /* Highlight the second word in the h1 header */
 .highlight {
-    color: #dd1c1a; /* Red color for the highlighted word */
+    color: #dd1c1a;
 }
 
 nav ul {
     list-style-type: none;
-    background-color: #474747; /* Medium grey background */
+    background-color: rgba(255, 255, 255, 0.3)
     text-align: center;
     margin: 0;
     padding: 0;
