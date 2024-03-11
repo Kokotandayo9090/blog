@@ -99,18 +99,16 @@ nav ul li a:hover {
 .main-section {
     padding: 1rem;
     background: #fff;
+    display: flex;
 }
 
 .article-image {
-    float: left;
-    margin-right: 1rem;
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add some space between the image and the following text */
+    width: auto; /* Adjust width as necessary, or specify a fixed width */
+    height: auto; /* Maintain aspect ratio */
 }
 
-.article-image img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
 
 figcaption {
     font-size: .9rem;
@@ -130,13 +128,22 @@ button:hover {
     opacity: 0.8;
 }
 
+.imageleft{
+
+    float: left;
+} 
+
 .subsection {
-    padding: 1rem 0;
+    display: flex;
+    justify-content: center; /* This centers the items horizontally */
+    align-items: center; /* This centers the items vertically */
+    gap: 20px;
 }
 
 .subsection figure {
     margin: 1rem;
     text-align: center;
+    display: inline-block;
 }
 
 .expand {
@@ -180,11 +187,16 @@ footer p {
 footer a {
     color: #fff;
 }
-
+button {
+    color: #ce1c1c;
+}
 footer a:hover {
     color: #f4f4f4; /* Placeholder for the actual hover color */
 }
-
+.left-side, .right-side {
+    flex: 1; /* This ensures both sides take up equal space */
+    height: 100vh; /* Adjust the height as needed */
+}
 
 @media (min-width: 768px) {
     .article-image {
