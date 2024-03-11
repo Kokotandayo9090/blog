@@ -57,16 +57,7 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-}
-.box {
-  float: left;
-  margin-right: 15px;
-  width: 150px;
-  height: 100px;
-  border-radius: 5px;
-  background-color: rgb(207 232 220);
-  padding: 1em;
-}
+
 
 header {
     background: #333;
@@ -129,7 +120,7 @@ figcaption {
 button {
     display: inline-block;
     padding: .5rem 2rem;
-    background: #e8491d;
+    background: #f4f4f4;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -158,7 +149,7 @@ button:hover {
 }
 
 aside h3 {
-    background: #e8491d; 
+    background: #f4f4f4; 
     color: #fff;
     padding: .2rem 0;
     margin: 1rem 0 0;
@@ -186,7 +177,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #e8491d; /* Placeholder for the actual hover color */
+    color: #f4f4f4; /* Placeholder for the actual hover color */
 }
 
 
