@@ -148,14 +148,16 @@ button:hover {
     margin-top: 1rem;
 }
 
+aside {
+    float: right; /* Floats the image to the right */
+    margin-left: 20px; /* Adds space between the image and the text */
+    width: 50%; /* Adjust the width as needed, or according to your layout/design */
+}
 aside h3 {
     background: #f4f4f4; 
     color: #fff;
     padding: .2rem 0;
     margin: 1rem 0 0;
-    float: right; /* Floats the image to the right */
-    margin-left: 20px; /* Adds space between the image and the text */
-    width: 50%; /* Adjust the width as needed, or according to your layout/design */
 }
 
 aside img {
